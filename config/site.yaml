@@ -1,7 +1,6 @@
-title: Grav
+title: Jasmin Portfolio
 author:
-  name: Joe Bloggs
-  email: 'joe@test.com'
+  name: Svenja Schäfer
+  email: 'svenjaschaefer@gmail.com'
 metadata:
-    description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
-
+    description: 'A Grav Theme for Photography Portfolio'

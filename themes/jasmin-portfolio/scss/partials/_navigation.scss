@@ -1,0 +1,48 @@
+// Hamburger Side Navigation with Dropdown Option
+@import "partials/_colors.scss";
+
+$hamburger-padding-y: 0;
+$hamburger-layer-width: 25px;
+$hamburger-layer-height: 2.5px;
+$hamburger-layer-color: $text;
+
+@import "partials/hamburgers/hamburgers.scss";
+
+#main-nav {
+  .hamburger {
+    top: 30px;
+    position: fixed;
+    z-index: 2;
+  }
+}
+
+#navigation {
+  width: 250px;
+  height: 100%;
+  display: none;
+  background-color: $background;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  a {
+    letter-spacing: 2px;
+    line-height: 2.5;
+    transition: 0.3s;
+    &:hover {
+      background-color: $text;
+      color: $background;
+    }
+  }
+  .navigation {
+    padding-left: 55px;
+    padding-top: 50%;
+  }
+}
+
+#sub-nav {
+  display: none;
+}

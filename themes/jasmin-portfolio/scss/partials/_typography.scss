@@ -1,0 +1,17 @@
+// All the fonts needed for your incredible portfolio
+@font-face {
+  font-family: 'Futura Light Condensed';
+  src: url('../fonts/Futura Light Condensed Regular/Futura Light Condensed Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'MG Open Canonica';
+  src: url('../fonts/MgOpen_Canonica/MgOpenCanonicaRegular.eot');
+  src: url('../fonts/MgOpen_Canonica/MgOpenCanonicaRegular.ttf') format('truetype'),;
+  src: url('../fonts/MgOpen_Canonica/MgOpenCanonicaRegular.woff') format('woff'),;
+}
+
+// Fonts Variables
+$Futura: 'Futura Light Condensed', sans-serif;
+$MG: 'MG Open Canonica', serif;
+$Optima: 'Optima', sans-serif;
+$Minion: 'Minion', serif;

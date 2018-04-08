@@ -1,0 +1,17 @@
+// Styles for gallery
+// Do not forget to give your images a predefined width.
+.photo-container {
+  column-count: 3;
+  column-gap: 0;
+  padding-left: 10px;
+}
+
+.photo-item {
+  break-inside: avoid;
+  box-sizing: border-box;
+  padding: 0% 3% 3% 0%;
+      img {
+        padding: 0;
+        max-width: 100%;
+      }
+}

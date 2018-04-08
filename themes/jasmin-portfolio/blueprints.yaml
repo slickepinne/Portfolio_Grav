@@ -1,0 +1,27 @@
+name: Jasmin Portfolio
+version: 0.1.0
+description: Design and Photography Portfolio
+icon: rebel
+author:
+  name: Svenja Schäfer
+  email: svenjaschaefer@posteo.de
+homepage: https://github.com/svenja-sch-fer/grav-theme-jasmin-portfolio
+demo: http://demo.yoursite.com
+keywords: portfolio, grav, design, photography
+bugs: https://github.com/svenja-sch-fer/grav-theme-jasmin-portfolio/issues
+readme: https://github.com/svenja-sch-fer/grav-theme-jasmin-portfolio/blob/develop/README.md
+license: MIT
+
+form:
+  validation: loose
+  fields:
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in Menu
+        highlight: 1
+        default: 1
+        options:
+          1: PLUGIN_ADMIN.ENABLED
+          0: PLUGIN_ADMIN.DISABLED
+        validate:
+          type: bool

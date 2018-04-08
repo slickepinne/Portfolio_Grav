@@ -1,0 +1,84 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
+<head>
+{% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'partials/metadata.html.twig' %}
+
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+
+    {% block stylesheets %}
+        {% do assets.addCss('theme://css-compiled/template.css', 100) %}
+        {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 99) %}
+    {% endblock %}
+    {{ assets.css() }}
+
+    {% block javascripts %}
+        {% do assets.addJs('jquery', 101) %}
+        {% do assets.addJs('theme://js/custom.js', 100) %}
+    {% endblock %}
+    {{ assets.js() }}
+
+{% endblock head%}
+</head>
+<body>
+
+{% block header %}
+    <nav class="header">
+        <!-- <div class="header-inner"> -->
+            {% block header_navigation %}
+                {% include 'partials/navigation.html.twig' %}
+            {% endblock %}
+            <div id="title">
+              <span>
+                <a href="{{ base_url == '' ? '/' : base_url }}">
+                    {{ page.find('/images/').media['title.png']}}
+                </a>
+                </span>
+            </div>
+            <div id="social-icons">
+              <span>
+                <a href="{{ page.header.author.email }}" target="_blank">{{ page.find('/images/socialicons').media['eMail.svg'].resize(30,30) }}</a>
+                <a href="http://www.linkedin.com/in/svenjaschaefer" target="_blank">{{ page.find('/images/socialicons').media['LinkedIn.svg'].resize(30,30) }}</a>
+                <a href="http://www.instagram.com/slickepinne" target="_blank">{{ page.find('/images/socialicons').media['Instagram.svg'].resize(30,30) }}</a>
+                <a href="http://www.pinterest.com/slickepinne" target="_blank">{{ page.find('/images/socialicons').media['Pinterest.svg'].resize(30,30) }}</a>
+            </div>
+            </span>
+        <!-- </div> -->
+    </nav>
+{% endblock %}
+
+{% block body %}
+    <section id="body">
+        <div class="main">
+        {% block content %}
+        {% endblock %}
+        </div>
+    </section>
+{% endblock %}
+
+{% block footer %}
+    <div class="footer">
+      <div class="footer-inner">
+        <p>
+          Impressum
+        </p>
+        <p>
+          &copy; 2018, coded with &hearts; by <a href="http://www.svenjaschaefer.com">Svenja Schäfer</a>
+        </p>
+      </div>
+    </div>
+{% endblock %}
+
+{# Footer JS #}
+{% block bottom %}
+
+{% endblock %}
+
+</body>
+</html>

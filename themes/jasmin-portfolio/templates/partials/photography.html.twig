@@ -1,0 +1,35 @@
+{% if page.menu == "Photography" %}
+    <div class="photo-container">
+        {% for child in page.find('/images/photography').children %}
+            {% for image in child.media.images %}
+            <div class="photo-item">
+              {{ image.html }}
+            </div>
+            {% endfor %}
+        {% endfor %}
+    </div>
+    {% elseif page.menu == "Portrait" %}
+    <div class="photo-container">
+        {% for image in page.find('/images/photography/portrait').media.images %}
+            <div class="photo-item">
+              {{ image.html }}
+            </div>
+        {% endfor %}
+    </div>
+    {% elseif page.menu == "Lifestyle" %}
+    <div class="photo-container">
+        {% for image in page.find('/images/photography/lifestyle').media.images %}
+            <div class="photo-item">
+              {{ image.html }}
+            </div>
+        {% endfor %}
+    </div>
+    {% elseif page.menu == "Travel & Places" %}
+    <div class="photo-container">
+        {% for image in page.find('/images/photography/travel').media.images %}
+            <div class="photo-item">
+              {{ image.html }}
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}

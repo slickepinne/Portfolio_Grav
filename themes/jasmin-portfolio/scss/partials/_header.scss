@@ -1,0 +1,19 @@
+// The header section of your theme
+
+.header {
+  display: flex;
+
+  #main-nav, #title, #social-icons {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    &:first-child > span {
+      margin-right: auto;
+    }
+    &:last-child > span {
+      padding-top: 15px;
+      padding-right: 10px;
+      margin-left: auto;
+    }
+  }
+}

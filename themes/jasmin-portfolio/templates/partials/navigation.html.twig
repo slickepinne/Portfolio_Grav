@@ -1,0 +1,30 @@
+<div id="main-nav">
+  <span>
+    <button class="hamburger hamburger--spring" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <div id="navigation">
+        {% macro loop(page) %}
+            {% for p in page.children %}
+                {% if p.visible %}
+                <li>
+                    <a href="{{ p.url }}">{{ p.menu }}</a>
+                    {% if p.children.count > 0 %}
+                    <ul id="sub-nav">
+                        {{ _self.loop(p) }}
+                    </ul>
+                {% endif %}
+                </li>
+                {% endif %}
+            {% endfor %}
+        {% endmacro %}
+
+        <ul class="navigation">
+            {{ _self.loop(pages) }}
+        </ul>
+    </div>
+    </span>
+</div>

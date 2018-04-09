@@ -2,9 +2,10 @@
 
 // The bricks of the theme
 @import "partials/_colors.scss";
-@import "partials/_typography.scss";
+@import "partials/_mediaqueries.scss";
 
 // Parts of the theme
+@import "partials/_typography.scss";
 @import "partials/_navigation.scss";
 @import "partials/_header.scss";
 @import "partials/_photography.scss";

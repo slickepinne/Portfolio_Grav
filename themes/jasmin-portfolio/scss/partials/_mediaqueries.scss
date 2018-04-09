@@ -1,105 +1,29 @@
+// Feel free to add more breakpoints
 
-// Überlegungen
-//
-// $x-small-screen: 480px !default;
-// $small-screen: 999px !default;
-// $medium-screen: 1200px !default;
-//
-// @mixin mobiles {
-//   @media (max-width: #{$x-small-screen}) {
-//        @content;
-//      }
-// }
+$x-small-screen: 480px !default;
+$small-screen: 999px !default;
+$medium-screen: 1200px !default;
 
-// @mixin pads {
-//   @media (min-width: #{$x-small-screen} + 1px) and (max-width: #{$small-screen}) {
-//        @content;
-//      }
-// }
+@mixin mobiles {
+  @media (max-width: #{$x-small-screen}) {
+       @content;
+     }
+}
 
-// @mixin laptops {
-//   @media (min-width: #{$small-screen} + 1px) and (max-width: #{$medium-screen}) {
-//        @content;
-//      }
-// }
+@mixin pads {
+  @media (min-width: #{$x-small-screen} + 1px) and (max-width: #{$small-screen}) {
+       @content;
+     }
+}
 
-// @mixin bigscreen {
-//   @media (min-width: #{$medium-screen} + 1px) {
-//        @content;
-//      }
-// }
+@mixin laptops {
+  @media (min-width: #{$small-screen} + 1px) and (max-width: #{$medium-screen}) {
+       @content;
+     }
+}
 
-//
-// Smartphones horizontal
-// Alles bis zu einer Breite von XX wird so dargestellt.
-//
-// Tablets
-// Alles von der Breite XX bis zur Breite XX wird so dargestellt.
-//
-// Laptops
-// Alles von der Breite XX bis zur Breite XX wird so dargestellt.
-//
-// Bildschirme
-// Alles ab einer Breite von XX wird so dargestellt.
-
-
-// /* Smartphones (portrait and landscape) ----------- */
-// @media only screen
-// and (min-device-width : 320px)
-// and (max-device-width : 480px) {
-// /* Styles */
-// }
-//
-// /* Smartphones (landscape) ----------- */
-// @media only screen
-// and (min-width : 321px) {
-// /* Styles */
-// }
-//
-// /* Smartphones (portrait) ----------- */
-// @media only screen
-// and (max-width : 320px) {
-// /* Styles */
-// }
-//
-// /* iPhone 4 ----------- */
-// @media
-// only screen and (-webkit-min-device-pixel-ratio : 1.5),
-// only screen and (min-device-pixel-ratio : 1.5) {
-// /* Styles */
-// }
-//
-// /* iPads (portrait and landscape) ----------- */
-// @media only screen
-// and (min-device-width : 768px)
-// and (max-device-width : 1024px) {
-// /* Styles */
-// }
-//
-// /* iPads (landscape) ----------- */
-// @media only screen
-// and (min-device-width : 768px)
-// and (max-device-width : 1024px)
-// and (orientation : landscape) {
-// /* Styles */
-// }
-//
-// /* iPads (portrait) ----------- */
-// @media only screen
-// and (min-device-width : 768px)
-// and (max-device-width : 1024px)
-// and (orientation : portrait) {
-// /* Styles */
-// }
-//
-// /* Desktops and laptops ----------- */
-// @media only screen
-// and (min-width : 1224px) {
-// /* Styles */
-// }
-//
-// /* Large screens ----------- */
-// @media only screen
-// and (min-width : 1824px) {
-// /* Styles */
-// }
+@mixin bigscreens {
+  @media (min-width: #{$medium-screen} + 1px) {
+       @content;
+     }
+}

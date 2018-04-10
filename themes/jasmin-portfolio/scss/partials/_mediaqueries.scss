@@ -1,29 +1,31 @@
 // Feel free to add more breakpoints
 
 $x-small-screen: 480px !default;
-$small-screen: 999px !default;
+$small-screen: 990px !default;
 $medium-screen: 1200px !default;
+$large-screen: 1201px !default;
 
 @mixin mobiles {
-  @media (max-width: #{$x-small-screen}) {
+  @media only screen and (max-width: #{$x-small-screen}) {
        @content;
      }
 }
 
-@mixin pads {
-  @media (min-width: #{$x-small-screen} + 1px) and (max-width: #{$small-screen}) {
+
+@mixin tablets {
+  @media only screen and (max-width: #{$small-screen}) {
        @content;
      }
 }
 
 @mixin laptops {
-  @media (min-width: #{$small-screen} + 1px) and (max-width: #{$medium-screen}) {
+  @media only screen and (max-width: #{$medium-screen}) {
        @content;
      }
 }
 
 @mixin bigscreens {
-  @media (min-width: #{$medium-screen} + 1px) {
+  @media only screen and (min-width: #{$large-screen}) {
        @content;
      }
 }

@@ -4,6 +4,12 @@
   column-count: 3;
   column-gap: 0;
   padding-left: 10px;
+  @include tablets {
+    column-count: 2;
+  }
+  @include mobiles {
+    column-count: 1;
+  }
 }
 
 .photo-item {

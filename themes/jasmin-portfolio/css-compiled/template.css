@@ -716,6 +716,12 @@
   column-count: 3;
   column-gap: 0;
   padding-left: 10px; }
+  @media only screen and (max-width: 990px) {
+    .photo-container {
+      column-count: 2; } }
+  @media only screen and (max-width: 480px) {
+    .photo-container {
+      column-count: 1; } }
 
 .photo-item {
   break-inside: avoid;

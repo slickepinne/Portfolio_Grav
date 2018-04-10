@@ -28,6 +28,9 @@ $hamburger-layer-color: $text;
   left: 0;
   top: 0;
   z-index: 1;
+  @include mobiles {
+    width: 150px;
+  }
   a {
     letter-spacing: 2px;
     line-height: 2.5;
@@ -40,6 +43,14 @@ $hamburger-layer-color: $text;
   .navigation {
     padding-left: 55px;
     padding-top: 50%;
+    @include mobiles {
+      padding-left: 30px;
+    }
+    #sub-nav {
+      @include mobiles {
+        margin-left: -30px;
+      }
+    }
   }
 }
 

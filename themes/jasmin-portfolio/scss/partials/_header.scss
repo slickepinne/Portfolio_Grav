@@ -2,7 +2,6 @@
 
 .header {
   display: flex;
-
   #main-nav, #title, #social-icons {
     flex: 1;
     display: flex;
@@ -14,6 +13,17 @@
       padding-top: 15px;
       padding-right: 10px;
       margin-left: auto;
+    }
+  }
+  #social-icons {
+    @include tablets {
+      display: none;
+    }
+  }
+  #title img {
+    max-width: 100%;
+    @include mobiles {
+      padding-top: 15px;
     }
   }
 }

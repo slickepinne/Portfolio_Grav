@@ -19,7 +19,7 @@ function toggleHamburger() {
       }
 
       // toggle sub-pages navigation
-      $('#navigation').hover(function() {
+      $('#sub-nav').parent().hover(function() {
         $('#sub-nav').fadeIn('slow');
       }, function() {
         $('#sub-nav').fadeOut();

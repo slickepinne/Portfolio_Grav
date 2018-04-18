@@ -692,9 +692,6 @@
     letter-spacing: 2px;
     line-height: 2.5;
     transition: 0.3s; }
-    #navigation a:hover {
-      background-color: #333;
-      color: #fafafa; }
   #navigation .navigation {
     padding-left: 55px;
     padding-top: 50%; }

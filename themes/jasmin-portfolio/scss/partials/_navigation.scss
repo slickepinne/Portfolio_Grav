@@ -35,10 +35,10 @@ $hamburger-layer-color: $text;
     letter-spacing: 2px;
     line-height: 2.5;
     transition: 0.3s;
-    &:hover {
-      background-color: $text;
-      color: $background;
-    }
+    // &:hover {
+    //   background-color: $text;
+    //   color: $background;
+    // }
   }
   .navigation {
     padding-left: 55px;

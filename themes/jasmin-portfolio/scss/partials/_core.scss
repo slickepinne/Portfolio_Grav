@@ -1,4 +1,8 @@
 // As the name suggests: It's the core styling
+html,body,blockquote,code,h1,h2,h3,h4,h5,h6,p,pre {
+  margin:0;
+  padding:0;
+}
 
 * {
     -webkit-box-sizing: border-box;
@@ -11,7 +15,6 @@
 }
 
 body {
-    font-size: 1rem;
     color: $text;
     font-family: $Futura;
     background-color: $background;
@@ -20,6 +23,10 @@ body {
 a {
     text-decoration: none;
     color: $text;
+}
+
+p {
+  font-size: 16px;
 }
 
 #body {
@@ -38,26 +45,33 @@ a {
   @include mobiles {
     column-count: 1;
   }
+  .about-img {
+    text-align: center;
+  }
   .about-img, .about-text {
     break-inside: avoid;
     box-sizing: border-box;
     padding: 0% 3% 3% 0%;
     img {
-      max-width: 90%;
-      margin-top: 10%;
+      max-width: 80%;
+      // margin-top: 10%;
       margin-left: 5%;
-      @include tablets {
-        margin-top: 20%;
-      }
+      // @include tablets {
+      //   margin-top: 20%;
+      // }
     }
   }
   .about-text {
-    font-family: $Minion;
+    font-family: $Futura;
+    h1,h2,h3,h4,h5,h6,p {
+      margin-top: 6px;
+    }
     a {
       text-decoration: underline;
     }
     h5 {
       font-family: $Optima;
+      margin-top: 12px;
     }
     ul {
       margin: 0;

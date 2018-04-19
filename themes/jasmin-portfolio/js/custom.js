@@ -26,12 +26,12 @@ function toggleHamburger() {
       });
 
       // click anywhere to hide navigation
-      if (hamburger[0].classList.contains('is-active')) {
-        event.stopPropagation();
-        $(document).click(function() {
-          $('#navigation').fadeOut('slow');
-        })
-      }
+      // if (hamburger[0].classList.contains('is-active')) {
+      //   event.stopPropagation();
+      //   $(document).click(function() {
+      //     $('#navigation').fadeOut('slow');
+      //   })
+      // }
     })
 };
 

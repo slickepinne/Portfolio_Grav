@@ -29,7 +29,14 @@ $hamburger-layer-color: $text;
   top: 0;
   z-index: 1;
   @include mobiles {
-    width: 150px;
+    width: 100%;
+    background-color: #e2e9e1;
+    text-align: center;
+  }
+  @include tablets {
+    width: 100%;
+    background-color: #e2e9e1;
+    text-align: center;
   }
   a {
     letter-spacing: 2px;

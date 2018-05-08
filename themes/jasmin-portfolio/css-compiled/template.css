@@ -724,6 +724,10 @@
       padding-top: 15px;
       padding-right: 10px;
       margin-left: auto; }
+  .header #social-icons svg {
+    height: 30px;
+    width: 30px;
+    fill: #d2dad3 !important; }
   @media only screen and (max-width: 990px) {
     .header #social-icons {
       display: none; } }
@@ -783,8 +787,7 @@ body {
   background-color: #fafafa; }
 
 a {
-  text-decoration: none;
-  color: #333; }
+  text-decoration: none; }
 
 p {
   font-size: 16px; }

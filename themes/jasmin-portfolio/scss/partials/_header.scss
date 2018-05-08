@@ -16,6 +16,11 @@
     }
   }
   #social-icons {
+    svg {
+      height: 30px;
+      width: 30px;
+      fill: rgb(210,218,211)!important;
+    }
     @include tablets {
       display: none;
     }

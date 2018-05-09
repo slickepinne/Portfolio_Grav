@@ -787,7 +787,8 @@ body {
   background-color: #fafafa; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #666666; }
 
 p {
   font-size: 16px; }
@@ -796,7 +797,7 @@ p {
   margin-top: 50px; }
 
 .about {
-  column-count: 2;
+  column-count: 3;
   column-gap: 0;
   padding-left: 10px;
   margin-top: 5%; }
@@ -813,14 +814,19 @@ p {
       max-width: 80%;
       margin-left: 5%; }
   .about .about-text {
-    font-family: "Futura Light Condensed", sans-serif; }
+    font-family: Georgia, 'Times New Roman';
+    color: #666666; }
     .about .about-text h1, .about .about-text h2, .about .about-text h3, .about .about-text h4, .about .about-text h5, .about .about-text h6, .about .about-text p {
-      margin-top: 6px; }
+      margin-top: 6px;
+      letter-spacing: 0.55px; }
     .about .about-text a {
       text-decoration: underline; }
-    .about .about-text h5 {
-      font-family: "Optima", sans-serif;
-      margin-top: 12px; }
+    .about .about-text h4 {
+      font-family: "Futura Light Condensed", sans-serif;
+      margin-top: 50px;
+      color: #414141;
+      letter-spacing: 4px;
+      font-weight: lighter; }
     .about .about-text ul {
       margin: 0;
       padding: 0; }

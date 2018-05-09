@@ -5,23 +5,24 @@ html,body,blockquote,code,h1,h2,h3,h4,h5,h6,p,pre {
 }
 
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    :focus {
-      outline: none;
-    }
-    list-style: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  :focus {
+    outline: none;
+  }
+  list-style: none;
 }
 
 body {
-    color: $text;
-    font-family: $Futura;
-    background-color: $background;
+  color: $text;
+  font-family: $Futura;
+  background-color: $background;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+  color: rgb(102, 102, 102);
 }
 
 p {
@@ -37,7 +38,7 @@ p {
 }
 
 .about {
-  column-count: 2;
+  column-count: 3;
   column-gap: 0;
   padding-left: 10px;
   margin-top: 5%;
@@ -61,16 +62,21 @@ p {
     }
   }
   .about-text {
-    font-family: $Futura;
+    font-family: Georgia, 'Times New Roman';
+    color: rgb(102, 102, 102);
     h1,h2,h3,h4,h5,h6,p {
       margin-top: 6px;
+      letter-spacing: 0.55px;
     }
     a {
       text-decoration: underline;
     }
-    h5 {
-      font-family: $Optima;
-      margin-top: 12px;
+    h4 {
+      font-family: $Futura;
+      margin-top: 50px;
+      color: rgb(65, 65, 65);
+      letter-spacing: 4px;
+      font-weight: lighter;
     }
     ul {
       margin: 0;

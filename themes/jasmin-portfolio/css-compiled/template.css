@@ -801,6 +801,9 @@ p {
   column-gap: 0;
   padding-left: 10px;
   margin-top: 5%; }
+  @media only screen and (max-width: 990px) {
+    .about {
+      column-count: 2; } }
   @media only screen and (max-width: 480px) {
     .about {
       column-count: 1; } }
@@ -811,8 +814,15 @@ p {
     box-sizing: border-box;
     padding: 0% 3% 3% 0%; }
     .about .about-img img, .about .about-text img {
-      max-width: 80%;
+      max-width: 70%;
+      margin-top: 200px;
       margin-left: 5%; }
+      @media only screen and (max-width: 990px) {
+        .about .about-img img, .about .about-text img {
+          max-width: 90%; } }
+      @media only screen and (max-width: 480px) {
+        .about .about-img img, .about .about-text img {
+          margin-top: 20%; } }
   .about .about-text {
     font-family: Georgia, 'Times New Roman';
     color: #666666; }

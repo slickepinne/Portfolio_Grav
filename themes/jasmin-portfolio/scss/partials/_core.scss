@@ -26,7 +26,7 @@ a {
 }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 #body {
@@ -72,14 +72,35 @@ margin: 0 80px;
     }
   }
   .about-text {
-    font-family: $Freight, Georgia, 'Times New Roman';
+    font-family: $Freight;
     color: rgb(102, 102, 102);
     h1,h2,h3,h4,h5,h6,p {
       margin-top: 6px;
       letter-spacing: 0.55px;
     }
     a {
-      text-decoration: underline;
+      position: relative;
+      // color: #000;
+      text-decoration: none;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: -5px;
+        left: 0;
+        background-color: #9BCC9B;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+      }
+      &:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }
     }
     h4 {
       font-family: $Futura;

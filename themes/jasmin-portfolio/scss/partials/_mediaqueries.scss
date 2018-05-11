@@ -2,8 +2,8 @@
 
 $x-small-screen: 480px !default;
 $small-screen: 990px !default;
-$medium-screen: 1200px !default;
-$large-screen: 1201px !default;
+$medium-screen: 1500px !default;
+$large-screen: 1501px !default;
 
 @mixin mobiles {
   @media only screen and (max-width: #{$x-small-screen}) {

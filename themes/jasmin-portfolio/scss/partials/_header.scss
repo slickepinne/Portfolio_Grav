@@ -15,20 +15,29 @@
       margin-left: auto;
     }
   }
+  #main-nav button {
+    margin-top: 30px;
+  }
   #social-icons {
+    margin-top: 45px;
     svg {
-      height: 30px;
-      width: 30px;
-      fill: rgb(210,218,211)!important;
+      height:20px;
+      width: 17px;
+      fill: #d2dad3 !important;
+      margin: 0 6px;
     }
     @include tablets {
       display: none;
     }
   }
-  #title svg {
-    max-width: 100%;
-    @include mobiles {
-      padding-top: 15px;
+  #title a {
+    display: flex;
+    flex-direction: column;
+    svg {
+      max-width: 100%;
+      @include mobiles {
+        z-index: 33;
+      }
     }
   }
 }

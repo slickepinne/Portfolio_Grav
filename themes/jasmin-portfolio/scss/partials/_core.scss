@@ -33,6 +33,10 @@ p {
   // padding: 0px 40px;
 }
 
+.layer {
+margin: 0 80px;
+}
+
 .main {
   margin-top: 50px;
 }
@@ -43,7 +47,7 @@ p {
   padding-left: 10px;
   margin-top: 5%;
   @include tablets {
-    column-count: 2;
+    column-count: 1;
   }
   @include mobiles {
     column-count: 1;
@@ -68,7 +72,7 @@ p {
     }
   }
   .about-text {
-    font-family: Georgia, 'Times New Roman';
+    font-family: $Freight, Georgia, 'Times New Roman';
     color: rgb(102, 102, 102);
     h1,h2,h3,h4,h5,h6,p {
       margin-top: 6px;

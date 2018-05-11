@@ -6,6 +6,9 @@
   src: url("../fonts/MgOpen_Canonica/MgOpenCanonicaRegular.eot");
   src: url("../fonts/MgOpen_Canonica/MgOpenCanonicaRegular.ttf") format("truetype");
   src: url("../fonts/MgOpen_Canonica/MgOpenCanonicaRegular.woff") format("woff"); }
+@font-face {
+  font-family: 'Freight Text Pro Book';
+  src: url("../fonts/freight-text-pro-book.ttf") format("truetype"); }
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -724,18 +727,26 @@
       padding-top: 15px;
       padding-right: 10px;
       margin-left: auto; }
-  .header #social-icons svg {
-    height: 30px;
-    width: 30px;
-    fill: #d2dad3 !important; }
-  @media only screen and (max-width: 990px) {
-    .header #social-icons {
-      display: none; } }
-  .header #title svg {
-    max-width: 100%; }
-    @media only screen and (max-width: 480px) {
-      .header #title svg {
-        padding-top: 15px; } }
+  .header #main-nav button {
+    margin-top: 30px; }
+  .header #social-icons {
+    margin-top: 45px; }
+    .header #social-icons svg {
+      height: 20px;
+      width: 17px;
+      fill: #d2dad3 !important;
+      margin: 0 6px; }
+    @media only screen and (max-width: 990px) {
+      .header #social-icons {
+        display: none; } }
+  .header #title a {
+    display: flex;
+    flex-direction: column; }
+    .header #title a svg {
+      max-width: 100%; }
+      @media only screen and (max-width: 480px) {
+        .header #title a svg {
+          z-index: 33; } }
 
 .photo-container {
   column-count: 3;
@@ -764,7 +775,7 @@
   font-family: Georgia, 'Times New Roman';
   width: 100%;
   border-top: 1px solid #d3d3d3;
-  margin-top: 20px;
+  margin-top: 100px;
   margin-bottom: 20px; }
   .footer p {
     font-size: 14px; }
@@ -805,6 +816,9 @@ a {
 p {
   font-size: 16px; }
 
+.layer {
+  margin: 0 80px; }
+
 .main {
   margin-top: 50px; }
 
@@ -815,7 +829,7 @@ p {
   margin-top: 5%; }
   @media only screen and (max-width: 990px) {
     .about {
-      column-count: 2; } }
+      column-count: 1; } }
   @media only screen and (max-width: 480px) {
     .about {
       column-count: 1; } }
@@ -836,7 +850,7 @@ p {
         .about .about-img img, .about .about-text img {
           margin-top: 20%; } }
   .about .about-text {
-    font-family: Georgia, 'Times New Roman';
+    font-family: "Freight Text Pro Book", Georgia, "Times New Roman";
     color: #666666; }
     .about .about-text h1, .about .about-text h2, .about .about-text h3, .about .about-text h4, .about .about-text h5, .about .about-text h6, .about .about-text p {
       margin-top: 6px;

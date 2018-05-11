@@ -9,9 +9,14 @@
   src: url('../fonts/MgOpen_Canonica/MgOpenCanonicaRegular.ttf') format('truetype'),;
   src: url('../fonts/MgOpen_Canonica/MgOpenCanonicaRegular.woff') format('woff'),;
 }
+@font-face {
+  font-family: 'Freight Text Pro Book';
+  src: url('../fonts/freight-text-pro-book.ttf') format('truetype');
+}
 
 // Fonts Variables
 $Futura: 'Futura Light Condensed', sans-serif;
+$Freight: 'Freight Text Pro Book';
 $MG: 'MG Open Canonica', serif;
 $Optima: 'Optima', sans-serif;
 $Minion: 'Minion', serif;

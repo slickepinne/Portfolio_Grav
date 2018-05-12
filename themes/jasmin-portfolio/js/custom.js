@@ -12,6 +12,7 @@ function toggleHamburger() {
       // toggle sidebar Navigation
       if (sideNav.style.display === "block") {
         $('#navigation').fadeOut('slow');
+        $('#sub-nav').fadeOut('slow');
       } else {
         $('#navigation').fadeIn('slow'), function() {
           sideNav.style.display = "block";
@@ -20,9 +21,7 @@ function toggleHamburger() {
 
       // toggle sub-pages navigation
       $('#sub-nav').parent().hover(function() {
-        $('#sub-nav').fadeIn('slow');
-      }, function() {
-        $('#sub-nav').fadeOut();
+        $('#sub-nav').fadeIn();
       });
 
       // click anywhere to hide navigation

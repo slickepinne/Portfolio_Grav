@@ -53,8 +53,12 @@ $hamburger-layer-color: $text;
   .navigation {
     padding-left: 55px;
     padding-top: 50%;
+    @include tablets {
+      padding-top: 30%;
+    }
     @include mobiles {
-      padding-left: 30px;
+      padding-left: 0;
+      padding-top: 30%;
     }
     #sub-nav {
       display: none;
@@ -70,5 +74,16 @@ $hamburger-layer-color: $text;
         padding: 0;
       }
     }
+    .mobile-social-media {
+      font-family: $Futura-Oblique;
+      display: none;
+      @include tablets {
+        display: block;
+      }
+      @include mobiles {
+        display: block;
+      }
+    }
+
   }
 }

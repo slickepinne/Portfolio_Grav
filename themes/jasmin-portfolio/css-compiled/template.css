@@ -715,9 +715,13 @@
   #navigation .navigation {
     padding-left: 55px;
     padding-top: 50%; }
+    @media only screen and (max-width: 990px) {
+      #navigation .navigation {
+        padding-top: 30%; } }
     @media only screen and (max-width: 480px) {
       #navigation .navigation {
-        padding-left: 30px; } }
+        padding-left: 0;
+        padding-top: 30%; } }
     #navigation .navigation #sub-nav {
       display: none;
       font-family: "Futura Light Condensed Oblique", sans-serif; }
@@ -731,6 +735,15 @@
           text-align: center;
           margin: 0;
           padding: 0; } }
+    #navigation .navigation .mobile-social-media {
+      font-family: "Futura Light Condensed Oblique", sans-serif;
+      display: none; }
+      @media only screen and (max-width: 990px) {
+        #navigation .navigation .mobile-social-media {
+          display: block; } }
+      @media only screen and (max-width: 480px) {
+        #navigation .navigation .mobile-social-media {
+          display: block; } }
 
 .header {
   display: flex; }
@@ -838,6 +851,9 @@ p {
 
 .layer {
   margin: 0 80px; }
+  @media only screen and (max-width: 480px) {
+    .layer {
+      margin: 0 30px; } }
 
 .main {
   margin-top: 50px; }
@@ -865,10 +881,11 @@ p {
       margin-left: 5%; }
       @media only screen and (max-width: 990px) {
         .about .about-img img, .about .about-text img {
-          max-width: 90%; } }
+          max-width: 100%; } }
       @media only screen and (max-width: 480px) {
         .about .about-img img, .about .about-text img {
-          margin-top: 20%; } }
+          margin-top: 0;
+          margin-left: 0; } }
   .about .about-text {
     font-family: "Freight Text Pro Book", serif;
     color: #666666; }
@@ -906,7 +923,6 @@ p {
       padding: 0; }
     @media only screen and (max-width: 480px) {
       .about .about-text {
-        margin-left: 5;
-        text-align: center; } }
+        margin-left: 5; } }
 
 /*# sourceMappingURL=template.css.map */

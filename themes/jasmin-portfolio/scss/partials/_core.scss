@@ -35,6 +35,9 @@ p {
 
 .layer {
 margin: 0 80px;
+  @include mobiles {
+    margin: 0 30px;
+  }
 }
 
 .main {
@@ -64,10 +67,11 @@ margin: 0 80px;
       margin-top: 200px;
       margin-left: 5%;
       @include tablets {
-        max-width: 90%;
+        max-width: 100%;
       }
       @include mobiles {
-        margin-top: 20%;
+        margin-top: 0;
+        margin-left: 0;
       }
     }
   }
@@ -80,7 +84,6 @@ margin: 0 80px;
     }
     a {
       position: relative;
-      // color: #000;
       text-decoration: none;
       &:before {
         content: "";
@@ -115,7 +118,6 @@ margin: 0 80px;
     }
     @include mobiles {
       margin-left: 5;
-      text-align: center;
     }
   }
 }

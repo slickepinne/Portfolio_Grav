@@ -4,6 +4,10 @@
   src: url('../fonts/Futura Light Condensed Regular/Futura Light Condensed Regular.otf') format('opentype');
 }
 @font-face {
+  font-family: 'Futura Light Condensed Oblique';
+  src: url('../fonts/Futura Light Condensed Oblique.otf') format('opentype');
+}
+@font-face {
   font-family: 'MG Open Canonica';
   src: url('../fonts/MgOpen_Canonica/MgOpenCanonicaRegular.eot');
   src: url('../fonts/MgOpen_Canonica/MgOpenCanonicaRegular.ttf') format('truetype'),;
@@ -16,6 +20,7 @@
 
 // Fonts Variables
 $Futura: 'Futura Light Condensed', sans-serif;
+$Futura-Oblique: 'Futura Light Condensed Oblique', sans-serif;
 $Freight: 'Freight Text Pro Book', serif;
 $MG: 'MG Open Canonica', serif;
 $Optima: 'Optima', sans-serif;

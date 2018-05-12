@@ -2,6 +2,9 @@
   font-family: 'Futura Light Condensed';
   src: url("../fonts/Futura Light Condensed Regular/Futura Light Condensed Regular.otf") format("opentype"); }
 @font-face {
+  font-family: 'Futura Light Condensed Oblique';
+  src: url("../fonts/Futura Light Condensed Oblique.otf") format("opentype"); }
+@font-face {
   font-family: 'MG Open Canonica';
   src: url("../fonts/MgOpen_Canonica/MgOpenCanonicaRegular.eot");
   src: url("../fonts/MgOpen_Canonica/MgOpenCanonicaRegular.ttf") format("truetype");
@@ -677,7 +680,7 @@
   z-index: 2; }
 
 #navigation {
-  width: 250px;
+  width: 300px;
   height: 100%;
   display: none;
   background-color: #fafafa;
@@ -701,19 +704,33 @@
   #navigation a {
     letter-spacing: 2px;
     line-height: 2.5;
-    transition: 0.3s; }
+    transition: 0.3s;
+    padding-left: 40px; }
+    @media only screen and (max-width: 990px) {
+      #navigation a {
+        padding: 0; } }
+    @media only screen and (max-width: 480px) {
+      #navigation a {
+        padding: 0; } }
   #navigation .navigation {
     padding-left: 55px;
     padding-top: 50%; }
     @media only screen and (max-width: 480px) {
       #navigation .navigation {
         padding-left: 30px; } }
-    @media only screen and (max-width: 480px) {
-      #navigation .navigation #sub-nav {
-        margin-left: -30px; } }
-
-#sub-nav {
-  display: none; }
+    #navigation .navigation #sub-nav {
+      display: none;
+      font-family: "Futura Light Condensed Oblique", sans-serif; }
+      @media only screen and (max-width: 990px) {
+        #navigation .navigation #sub-nav {
+          text-align: center;
+          margin: 0;
+          padding: 0; } }
+      @media only screen and (max-width: 480px) {
+        #navigation .navigation #sub-nav {
+          text-align: center;
+          margin: 0;
+          padding: 0; } }
 
 .header {
   display: flex; }
@@ -733,7 +750,7 @@
     margin-top: 45px; }
     .header #social-icons svg {
       height: 20px;
-      width: 17px;
+      width: 14px;
       fill: #d2dad3 !important;
       margin: 0 6px; }
     @media only screen and (max-width: 990px) {
@@ -744,6 +761,9 @@
     flex-direction: column; }
     .header #title a svg {
       max-width: 100%; }
+      @media only screen and (max-width: 990px) {
+        .header #title a svg {
+          z-index: 33; } }
       @media only screen and (max-width: 480px) {
         .header #title a svg {
           z-index: 33; } }
@@ -853,8 +873,8 @@ p {
     font-family: "Freight Text Pro Book", serif;
     color: #666666; }
     .about .about-text h1, .about .about-text h2, .about .about-text h3, .about .about-text h4, .about .about-text h5, .about .about-text h6, .about .about-text p {
-      margin-top: 6px;
-      letter-spacing: 0.55px; }
+      letter-spacing: 0.55px;
+      line-height: 1.5; }
     .about .about-text a {
       position: relative;
       text-decoration: none; }

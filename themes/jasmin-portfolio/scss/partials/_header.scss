@@ -22,7 +22,7 @@
     margin-top: 45px;
     svg {
       height:20px;
-      width: 17px;
+      width: 14px;
       fill: #d2dad3 !important;
       margin: 0 6px;
     }
@@ -35,6 +35,9 @@
     flex-direction: column;
     svg {
       max-width: 100%;
+      @include tablets {
+        z-index: 33;
+      }
       @include mobiles {
         z-index: 33;
       }

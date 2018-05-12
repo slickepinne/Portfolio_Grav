@@ -17,7 +17,7 @@ $hamburger-layer-color: $text;
 }
 
 #navigation {
-  width: 250px;
+  width: 300px;
   height: 100%;
   display: none;
   background-color: $background;
@@ -42,10 +42,13 @@ $hamburger-layer-color: $text;
     letter-spacing: 2px;
     line-height: 2.5;
     transition: 0.3s;
-    // &:hover {
-    //   background-color: $text;
-    //   color: $background;
-    // }
+    padding-left: 40px;
+    @include tablets {
+      padding: 0;
+    }
+    @include mobiles {
+      padding: 0;
+    }
   }
   .navigation {
     padding-left: 55px;
@@ -54,13 +57,18 @@ $hamburger-layer-color: $text;
       padding-left: 30px;
     }
     #sub-nav {
+      display: none;
+      font-family: $Futura-Oblique;
+      @include tablets {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
       @include mobiles {
-        margin-left: -30px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
       }
     }
   }
-}
-
-#sub-nav {
-  display: none;
 }

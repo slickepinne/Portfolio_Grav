@@ -233,6 +233,10 @@
 
 {% block body %}
     <section id="body">
+      <div class="lightbox">
+        <span class="close"></span>
+        {{ page.find('/images/photography/lifestyle').media['alexandru-zdrobau-200768-min.jpg']}}
+      </div>
         <div class="main">
         {% block content %}
         {% endblock %}
@@ -251,7 +255,7 @@
             &copy; Jasmin Göttling 2018
           </p>
           <p class="coder">
-            Site Design by <a href="http://www.svenjaschaefer.com">Svenja Schäfer</a>
+            Site by <a href="http://www.svenjaschaefer.com">Svenja Schäfer</a>
           </p>
         </div>
       <!-- </div> -->

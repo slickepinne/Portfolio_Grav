@@ -3,11 +3,12 @@
 // The bricks of the theme
 @import "partials/_colors.scss";
 @import "partials/_mediaqueries.scss";
+@import "partials/_typography.scss";
 
 // Parts of the theme
-@import "partials/_typography.scss";
 @import "partials/_navigation.scss";
 @import "partials/_header.scss";
 @import "partials/_photography.scss";
+@import "partials/_lightbox.scss";
 @import "partials/_footer.scss";
 @import "partials/_core.scss";

@@ -6,21 +6,27 @@
   margin-top: 100px;
   margin-bottom: 20px;
   p {
-    font-size: 14px;
+    font-size: 12px;
+    @include mobiles {
+      font-size: 11px;
+    }
   }
   p:first-child {
-    padding-left: 10px;
+    color: #939393;
     margin-top: 20px;
   }
   .coder, .copyright {
     text-align: center;
   }
   .copyright {
-    margin-top: -17px;
+    margin-top: -15px;
+    @include tablets {
+      margin-top: -13px;
+    }
   }
   .coder {
     color: #939393;
-    line-height: 2;
+    line-height: 1.5;
     a {
       color: #939393;
     }

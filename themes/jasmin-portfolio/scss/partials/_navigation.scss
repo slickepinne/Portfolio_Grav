@@ -16,13 +16,17 @@ $hamburger-layer-color: $text;
   }
 }
 
+.hamburger {
+  padding-left: 10px;
+}
+
 #navigation {
   width: 300px;
   height: 100%;
   display: none;
   background-color: $background;
   transition-property: transform;
-  transition-duration: 0.5s;
+  transition-duration: 0.2s;
   transition-timing-function: ease;
   position: fixed;
   left: 0;
@@ -54,11 +58,12 @@ $hamburger-layer-color: $text;
     padding-left: 55px;
     padding-top: 50%;
     @include tablets {
+      padding-left: 0;
       padding-top: 30%;
     }
     @include mobiles {
       padding-left: 0;
-      padding-top: 30%;
+      padding-top: 40%;
     }
     #sub-nav {
       display: none;
@@ -73,6 +78,18 @@ $hamburger-layer-color: $text;
         margin: 0;
         padding: 0;
       }
+      a {
+        line-height: 2;
+      }
+      li:first-child {
+        margin-top: 20px;
+      }
+      li:last-child {
+        margin-bottom: 20px;
+      }
+    }
+    #first-social {
+      margin-top: 20px;
     }
     .mobile-social-media {
       font-family: $Futura-Oblique;
@@ -82,6 +99,9 @@ $hamburger-layer-color: $text;
       }
       @include mobiles {
         display: block;
+      }
+      a {
+        line-height: 2;
       }
     }
 

@@ -34,9 +34,10 @@ p {
 }
 
 .layer {
-margin: 0 80px;
+  margin: 0 60px;
+  padding: 20px;
   @include mobiles {
-    margin: 0 30px;
+    margin: 0 15px;
   }
 }
 
@@ -68,6 +69,8 @@ margin: 0 80px;
       margin-left: 5%;
       @include tablets {
         max-width: 100%;
+        margin-top: 0;
+        margin-left: 0;
       }
       @include mobiles {
         margin-top: 0;
@@ -92,7 +95,7 @@ margin: 0 80px;
         height: 1px;
         bottom: -5px;
         left: 0;
-        background-color: #9BCC9B;
+        background-color: rgb(55,65,49);
         visibility: hidden;
         -webkit-transform: scaleX(0);
         transform: scaleX(0);

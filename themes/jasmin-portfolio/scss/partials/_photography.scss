@@ -1,16 +1,24 @@
 // Styles for gallery
 // Do not forget to give your images a predefined width.
 .photo-container {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
   column-count: 3;
   column-gap: 0;
   padding-left: 10px;
   @include bigscreens {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
     column-count: 4;
   }
   @include tablets {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
     column-count: 2;
   }
   @include mobiles {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
     column-count: 1;
   }
 }
@@ -18,9 +26,9 @@
 .photo-item {
   break-inside: avoid;
   box-sizing: border-box;
-  padding: 0% 3% 3% 0%;
-      img {
-        padding: 0;
-        max-width: 100%;
-      }
+  padding: 0 10px 8px 0;
+    img {
+      padding: 0;
+      max-width: 100%;
+    }
 }

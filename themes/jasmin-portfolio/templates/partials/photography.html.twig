@@ -1,4 +1,4 @@
-{% if page.menu == "Photography" %}
+{% if page.menu == "PHOTOGRAPHY" %}
     <div class="photo-container">
         {% for child in page.find('/images/photography').children %}
             {% for image in child.media.images %}
@@ -24,7 +24,7 @@
             </div>
         {% endfor %}
     </div>
-    {% elseif page.menu == "Travel & Places" %}
+    {% elseif page.menu == "Travel" %}
     <div class="photo-container">
         {% for image in page.find('/images/photography/travel').media.images %}
             <div class="photo-item">

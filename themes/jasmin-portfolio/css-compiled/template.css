@@ -717,7 +717,7 @@
         padding: 0; } }
   #navigation .navigation {
     padding-left: 55px;
-    padding-top: 50%; }
+    padding-top: 57%; }
     @media only screen and (max-width: 990px) {
       #navigation .navigation {
         padding-left: 0;
@@ -741,12 +741,6 @@
           padding: 0; } }
       #navigation .navigation #sub-nav a {
         line-height: 2; }
-      #navigation .navigation #sub-nav li:first-child {
-        margin-top: 20px; }
-      #navigation .navigation #sub-nav li:last-child {
-        margin-bottom: 20px; }
-    #navigation .navigation #first-social {
-      margin-top: 20px; }
     #navigation .navigation .mobile-social-media {
       font-family: "Futura Light Condensed Oblique", sans-serif;
       display: none; }
@@ -878,8 +872,7 @@ p {
   font-size: 14px; }
 
 .layer {
-  margin: 0 60px;
-  padding: 20px; }
+  margin: 0 60px; }
   @media only screen and (max-width: 550px) {
     .layer {
       margin: 0 15px; } }

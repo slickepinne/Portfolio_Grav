@@ -42,18 +42,31 @@ function toggleHamburger() {
     });
 };
 
-function photoPreview() {
-  $('.photo-item').click(function() {
-    console.log(this);
-  })
+
+
+
+function openLightBox() {
+  $('.photo-item').one('click', function() {
+    // console.log(this);
+    $(this).removeClass('photo-item');
+    $(this).addClass('lightbox');
+    $('.lightbox').append('<span class="close"></span>');
+  });
 }
 
-
+function closeLightBox() {
+  $(document).on('click', 'span.close' , function() {
+    $('.lightbox')
+      .removeClass('lightbox')
+      .addClass('photo-item');
+  });
+}
 // Fire functions
 
 jQuery(document).ready(function($){
   toggleHamburger();
-  photoPreview();
+  openLightBox();
+  closeLightBox();
 });
 
 

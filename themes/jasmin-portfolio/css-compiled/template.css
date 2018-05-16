@@ -168,6 +168,18 @@
 
 .header {
   display: flex; }
+  @media only screen and (max-width: 990px) {
+    .header .hidden-tablet {
+      display: none; } }
+  @media only screen and (max-width: 550px) {
+    .header .hidden-tablet {
+      display: none; } }
+  @media only screen and (max-width: 550px) {
+    .header .visible-tablet {
+      display: block; } }
+  @media only screen and (min-width: 990px) {
+    .header .visible-tablet {
+      display: none; } }
   .header #main-nav, .header #title, .header #social-icons {
     flex: 1;
     display: flex;
@@ -234,17 +246,12 @@
 
 .lightbox {
   position: fixed;
-  /* Stay in place */
   padding-top: 100px;
-  /* Location of the box */
   left: 0;
   top: 0;
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: #fafafa;
-  /* Fallback color */
-  background-color: rgba(250, 250, 250, 0.9);
-  /* Black w/ opacity */
+  background-color: rgba(250, 250, 250, 0.95);
   width: 100%;
   height: 100%;
   z-index: 102;
@@ -273,13 +280,13 @@
   .lightbox .close:after {
     transform: rotate(-45deg); }
   .lightbox img {
+    top: 35px;
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     left: 0;
     right: 0;
     max-width: 100%;
-    max-height: 80vh; }
+    max-height: 90vh; }
 
 .footer {
   color: #666666;

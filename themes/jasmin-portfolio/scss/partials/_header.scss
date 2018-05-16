@@ -2,6 +2,22 @@
 
 .header {
   display: flex;
+  .hidden-tablet {
+    @include tablets {
+      display: none;
+    }
+    @include mobiles {
+      display: none;
+    }
+  }
+  .visible-tablet {
+    @include mobiles {
+      display: block;
+    }
+    @include minview {
+      display: none;
+    }
+  }
   #main-nav, #title, #social-icons {
     flex: 1;
     display: flex;

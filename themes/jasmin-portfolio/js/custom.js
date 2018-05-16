@@ -46,7 +46,7 @@ function toggleHamburger() {
 
 
 function openLightBox() {
-  $('.photo-item').one('click', function() {
+  $('.photo-item').on('click', function() {
     // console.log(this);
     $(this).removeClass('photo-item');
     $(this).addClass('lightbox');
@@ -61,6 +61,9 @@ function closeLightBox() {
       .addClass('photo-item');
   });
 }
+
+
+
 // Fire functions
 
 jQuery(document).ready(function($){

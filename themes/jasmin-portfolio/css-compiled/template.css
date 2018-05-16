@@ -169,6 +169,9 @@
 .header {
   display: flex; }
   @media only screen and (max-width: 990px) {
+    .header {
+      display: block; } }
+  @media only screen and (max-width: 990px) {
     .header .hidden-tablet {
       display: none; } }
   @media only screen and (max-width: 550px) {
@@ -184,6 +187,9 @@
     flex: 1;
     display: flex;
     justify-content: center; }
+    @media only screen and (max-width: 990px) {
+      .header #main-nav, .header #title, .header #social-icons {
+        display: block; } }
     .header #main-nav:first-child > span, .header #title:first-child > span, .header #social-icons:first-child > span {
       margin-right: auto; }
     .header #main-nav:last-child > span, .header #title:last-child > span, .header #social-icons:last-child > span {
@@ -192,6 +198,9 @@
       margin-left: auto; }
   .header #main-nav button {
     margin-top: 30px; }
+    @media only screen and (max-width: 550px) {
+      .header #main-nav button {
+        margin-top: 35px; } }
   .header #social-icons {
     margin-top: 45px; }
     .header #social-icons svg {
@@ -209,9 +218,12 @@
       max-width: 100%; }
       @media only screen and (max-width: 990px) {
         .header #title a svg {
-          z-index: 33; } }
+          z-index: 33;
+          max-width: 40%;
+          align-self: center; } }
       @media only screen and (max-width: 550px) {
         .header #title a svg {
+          max-width: 50%;
           z-index: 35; } }
 
 .photo-container {

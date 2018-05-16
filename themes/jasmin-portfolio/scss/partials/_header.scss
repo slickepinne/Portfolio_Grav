@@ -2,6 +2,9 @@
 
 .header {
   display: flex;
+  @include tablets {
+    display: block;
+  }
   .hidden-tablet {
     @include tablets {
       display: none;
@@ -19,6 +22,9 @@
     }
   }
   #main-nav, #title, #social-icons {
+    @include tablets {
+      display: block;
+    }
     flex: 1;
     display: flex;
     justify-content: center;
@@ -33,6 +39,9 @@
   }
   #main-nav button {
     margin-top: 30px;
+    @include mobiles {
+      margin-top: 35px;
+    }
   }
   #social-icons {
     margin-top: 45px;
@@ -53,8 +62,11 @@
       max-width: 100%;
       @include tablets {
         z-index: 33;
+        max-width: 40%;
+        align-self: center;
       }
       @include mobiles {
+        max-width: 50%;
         z-index: 35;
       }
     }

@@ -218,13 +218,13 @@
       max-width: 100%; }
       @media only screen and (max-width: 990px) {
         .header #title a svg {
-          z-index: 33;
+          margin-right: 10px;
           max-width: 40%;
-          align-self: center; } }
+          align-self: flex-end; } }
       @media only screen and (max-width: 550px) {
         .header #title a svg {
-          max-width: 50%;
-          z-index: 35; } }
+          margin-right: 10px;
+          max-width: 50%; } }
 
 .photo-container {
   -webkit-column-count: 3;
@@ -361,46 +361,46 @@ p {
 .main {
   margin-top: 50px; }
 
-.about {
+.about, .imprint {
   column-count: 3;
   column-gap: 0;
   padding-left: 10px;
   margin-top: 5%; }
   @media only screen and (max-width: 990px) {
-    .about {
+    .about, .imprint {
       column-count: 1; } }
   @media only screen and (max-width: 550px) {
-    .about {
+    .about, .imprint {
       column-count: 1; } }
-  .about .about-img {
+  .about .about-img, .imprint .about-img {
     text-align: center; }
-  .about .about-img, .about .about-text {
+  .about .about-img, .about .about-text, .about .imprint-text, .imprint .about-img, .imprint .about-text, .imprint .imprint-text {
     break-inside: avoid;
     box-sizing: border-box;
     padding: 0% 3% 3% 0%; }
-    .about .about-img img, .about .about-text img {
+    .about .about-img img, .about .about-text img, .about .imprint-text img, .imprint .about-img img, .imprint .about-text img, .imprint .imprint-text img {
       max-width: 70%;
       margin-top: 200px;
       margin-left: 5%; }
       @media only screen and (max-width: 990px) {
-        .about .about-img img, .about .about-text img {
+        .about .about-img img, .about .about-text img, .about .imprint-text img, .imprint .about-img img, .imprint .about-text img, .imprint .imprint-text img {
           max-width: 100%;
           margin-top: 0;
           margin-left: 0; } }
       @media only screen and (max-width: 550px) {
-        .about .about-img img, .about .about-text img {
+        .about .about-img img, .about .about-text img, .about .imprint-text img, .imprint .about-img img, .imprint .about-text img, .imprint .imprint-text img {
           margin-top: 0;
           margin-left: 0; } }
-  .about .about-text {
+  .about .about-text, .about .imprint-text, .imprint .about-text, .imprint .imprint-text {
     font-family: "Freight Text Pro Book", serif;
     color: #666666; }
-    .about .about-text h1, .about .about-text h2, .about .about-text h3, .about .about-text h4, .about .about-text h5, .about .about-text h6, .about .about-text p {
+    .about .about-text h1, .about .about-text h2, .about .about-text h3, .about .about-text h4, .about .about-text h5, .about .about-text h6, .about .about-text p, .about .imprint-text h1, .about .imprint-text h2, .about .imprint-text h3, .about .imprint-text h4, .about .imprint-text h5, .about .imprint-text h6, .about .imprint-text p, .imprint .about-text h1, .imprint .about-text h2, .imprint .about-text h3, .imprint .about-text h4, .imprint .about-text h5, .imprint .about-text h6, .imprint .about-text p, .imprint .imprint-text h1, .imprint .imprint-text h2, .imprint .imprint-text h3, .imprint .imprint-text h4, .imprint .imprint-text h5, .imprint .imprint-text h6, .imprint .imprint-text p {
       letter-spacing: 0.55px;
       line-height: 1.5; }
-    .about .about-text a {
+    .about .about-text a, .about .imprint-text a, .imprint .about-text a, .imprint .imprint-text a {
       position: relative;
       text-decoration: none; }
-      .about .about-text a:before {
+      .about .about-text a:before, .about .imprint-text a:before, .imprint .about-text a:before, .imprint .imprint-text a:before {
         content: "";
         position: absolute;
         width: 100%;
@@ -413,21 +413,21 @@ p {
         transform: scaleX(0);
         -webkit-transition: all 0.3s ease-in-out 0s;
         transition: all 0.3s ease-in-out 0s; }
-      .about .about-text a:hover:before {
+      .about .about-text a:hover:before, .about .imprint-text a:hover:before, .imprint .about-text a:hover:before, .imprint .imprint-text a:hover:before {
         visibility: visible;
         -webkit-transform: scaleX(1);
         transform: scaleX(1); }
-    .about .about-text h4 {
+    .about .about-text h4, .about .imprint-text h4, .imprint .about-text h4, .imprint .imprint-text h4 {
       font-family: "Futura Light Condensed", sans-serif;
       margin-top: 50px;
       color: #414141;
       letter-spacing: 4px;
       font-weight: lighter; }
-    .about .about-text ul {
+    .about .about-text ul, .about .imprint-text ul, .imprint .about-text ul, .imprint .imprint-text ul {
       margin: 0;
       padding: 0; }
     @media only screen and (max-width: 550px) {
-      .about .about-text {
+      .about .about-text, .about .imprint-text, .imprint .about-text, .imprint .imprint-text {
         margin-left: 5; } }
 
 /*# sourceMappingURL=template.css.map */

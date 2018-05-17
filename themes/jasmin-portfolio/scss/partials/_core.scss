@@ -44,7 +44,7 @@ p {
   margin-top: 50px;
 }
 
-.about {
+.about, .imprint {
   column-count: 3;
   column-gap: 0;
   padding-left: 10px;
@@ -58,7 +58,7 @@ p {
   .about-img {
     text-align: center;
   }
-  .about-img, .about-text {
+  .about-img, .about-text, .imprint-text {
     break-inside: avoid;
     box-sizing: border-box;
     padding: 0% 3% 3% 0%;
@@ -77,7 +77,7 @@ p {
       }
     }
   }
-  .about-text {
+  .about-text, .imprint-text {
     font-family: $Freight;
     color: rgb(102, 102, 102);
     h1,h2,h3,h4,h5,h6,p {

@@ -44,7 +44,7 @@ $hamburger-layer-color: $text;
   }
   a {
     color: rgb(102, 102, 102);
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     line-height: 3;
     transition: 0.3s;
     padding-left: 14px;
@@ -57,7 +57,7 @@ $hamburger-layer-color: $text;
   }
   .navigation {
     padding-left: 55px;
-    padding-top: 57%;
+    padding-top: 67%;
     @include tablets {
       padding-left: 0;
       padding-top: 30%;

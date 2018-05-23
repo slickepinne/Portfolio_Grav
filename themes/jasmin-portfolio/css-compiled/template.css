@@ -96,7 +96,7 @@
   padding-left: 10px; }
 
 #navigation {
-  width: 300px;
+  width: 250px;
   height: 100%;
   display: none;
   background-color: #fafafa;
@@ -110,16 +110,17 @@
   @media only screen and (max-width: 550px) {
     #navigation {
       width: 100%;
-      background-color: #e2e9e1;
+      background-color: #e6eee7;
       text-align: center; } }
   @media only screen and (max-width: 990px) {
     #navigation {
       width: 100%;
-      background-color: #e2e9e1;
+      background-color: #e6eee7;
       text-align: center; } }
   #navigation a {
+    color: #666666;
     letter-spacing: 4px;
-    line-height: 2.5;
+    line-height: 3;
     transition: 0.3s;
     padding-left: 14px; }
     @media only screen and (max-width: 990px) {
@@ -140,6 +141,7 @@
         padding-left: 0;
         padding-top: 40%; } }
     #navigation .navigation #sub-nav {
+      padding-left: 0;
       display: none;
       font-family: "Futura Light Condensed Oblique", sans-serif; }
       @media only screen and (max-width: 990px) {
@@ -154,6 +156,12 @@
           padding: 0; } }
       #navigation .navigation #sub-nav a {
         line-height: 2; }
+        @media only screen and (max-width: 990px) {
+          #navigation .navigation #sub-nav a {
+            line-height: 1.7; } }
+        @media only screen and (max-width: 550px) {
+          #navigation .navigation #sub-nav a {
+            line-height: 1.7; } }
     #navigation .navigation .mobile-social-media {
       font-family: "Futura Light Condensed Oblique", sans-serif;
       display: none; }
@@ -164,7 +172,8 @@
         #navigation .navigation .mobile-social-media {
           display: block; } }
       #navigation .navigation .mobile-social-media a {
-        line-height: 2; }
+        line-height: 1.7;
+        font-size: 14px; }
 
 .header {
   display: flex; }
@@ -302,20 +311,18 @@
 
 .footer {
   color: #666666;
-  font-family: Georgia, 'Times New Roman';
+  font-family: "Futura Light Condensed", sans-serif;
   width: 100%;
   border-top: 1px solid #d3d3d3;
   margin-top: 100px;
   margin-bottom: 20px; }
   .footer p {
-    font-size: 12px; }
-    @media only screen and (max-width: 550px) {
-      .footer p {
-        font-size: 11px; } }
+    font-size: 11px; }
   .footer p:first-child {
     color: #939393;
     margin-top: 20px; }
   .footer .coder, .footer .copyright {
+    font-family: "Freight Text Pro Book", serif;
     text-align: center; }
   .footer .copyright {
     margin-top: -15px; }

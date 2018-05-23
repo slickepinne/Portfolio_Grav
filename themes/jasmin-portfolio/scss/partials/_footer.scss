@@ -1,21 +1,22 @@
 .footer {
   color: rgb(102,102,102);
-  font-family: Georgia, 'Times New Roman';
+  font-family: $Futura;
   width: 100%;
   border-top: 1px solid #d3d3d3;
   margin-top: 100px;
   margin-bottom: 20px;
   p {
-    font-size: 12px;
-    @include mobiles {
-      font-size: 11px;
-    }
+    font-size: 11px;
+    // @include mobiles {
+    //   font-size: 11px;
+    // }
   }
   p:first-child {
     color: #939393;
     margin-top: 20px;
   }
   .coder, .copyright {
+    font-family: $Freight;
     text-align: center;
   }
   .copyright {

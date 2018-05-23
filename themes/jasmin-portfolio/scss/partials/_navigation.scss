@@ -21,7 +21,7 @@ $hamburger-layer-color: $text;
 }
 
 #navigation {
-  width: 300px;
+  width: 250px;
   height: 100%;
   display: none;
   background-color: $background;
@@ -34,17 +34,18 @@ $hamburger-layer-color: $text;
   z-index: 1;
   @include mobiles {
     width: 100%;
-    background-color: #e2e9e1;
+    background-color: rgb(230,238,231);
     text-align: center;
   }
   @include tablets {
     width: 100%;
-    background-color: #e2e9e1;
+    background-color: rgb(230,238,231);
     text-align: center;
   }
   a {
+    color: rgb(102, 102, 102);
     letter-spacing: 4px;
-    line-height: 2.5;
+    line-height: 3;
     transition: 0.3s;
     padding-left: 14px;
     @include tablets {
@@ -66,6 +67,7 @@ $hamburger-layer-color: $text;
       padding-top: 40%;
     }
     #sub-nav {
+      padding-left: 0;
       display: none;
       font-family: $Futura-Oblique;
       @include tablets {
@@ -80,6 +82,12 @@ $hamburger-layer-color: $text;
       }
       a {
         line-height: 2;
+        @include tablets {
+          line-height: 1.7;
+        }
+        @include mobiles {
+          line-height: 1.7;
+        }
       }
     }
     .mobile-social-media {
@@ -92,7 +100,8 @@ $hamburger-layer-color: $text;
         display: block;
       }
       a {
-        line-height: 2;
+        line-height: 1.7;
+        font-size: 14px;
       }
     }
 
